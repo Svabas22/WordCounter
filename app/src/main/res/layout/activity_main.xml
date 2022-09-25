@@ -22,8 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"
         android:layout_marginTop="385dp"
-        android:text="Button"
         android:onClick="btnClick"
+        android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,8 +43,18 @@
         android:layout_marginTop="188dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Iveskite teksta"
+        android:hint="Input"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="8dp"
+        android:text="Word/symbol count:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
