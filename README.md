@@ -1,2 +1,2 @@
 # WordCounter
-LAB_1 MIPT 2022-09-12
+LAB_2 MIPT 
