@@ -37,7 +37,12 @@ public class MainActivity extends AppCompatActivity {
         }
         else
         {
-            this.txtCount.setText(String.valueOf(CountChar.getCharLength(this.txtInput.getText().toString(), this.countOpt.getSelectedItemPosition())));
+            if(this.countOpt.getSelectedItemPosition() == 1) {
+                this.txtCount.setText(String.valueOf(CountChar.getCharLength(this.txtInput.getText().toString())));
+            }
+            else if(this.countOpt.getSelectedItemPosition() == 0) {
+                this.txtCount.setText(String.valueOf(CountChar.getWordCount(this.txtInput.getText().toString())));
+            }
         }
 
     }
