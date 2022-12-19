@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             else if(this.countOpt.getSelectedItemPosition() == 0) {
                 this.txtCount.setText(String.valueOf(CountChar.getWordCount(this.txtInput.getText().toString())));
             }
-        }
+       }
 
     }
 }

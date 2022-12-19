@@ -10,8 +10,14 @@ public class CountChar {
     }
     public static int getWordCount(String text)
     {
-        int len = 0;
-        len = text.split("\\W").length;
-        return len;
+        if(!text.isEmpty()) {
+            int len = 0;
+            len = text.split("\\W").length;
+            return len;
+        }
+        else
+        {
+            return 0;
+        }
     }
 }
